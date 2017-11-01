@@ -7,4 +7,7 @@ class Backer
     @backed_projects = []
   end
 
+  def back_project(project)
+    @backed_projects << project unless !project.is_a Project
+  end
 end
