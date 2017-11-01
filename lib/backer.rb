@@ -9,5 +9,6 @@ class Backer
 
   def back_project(project)
     @backed_projects << project unless !project.is_a? Project
+    project.backers << self
   end
 end
