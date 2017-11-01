@@ -8,6 +8,6 @@ class Project
   end
 
   def add_backer(backer)
-    @backers << backer unless !backer.is_a Backer
+    @backers << backer unless !backer.is_a? Backer
   end
 end
