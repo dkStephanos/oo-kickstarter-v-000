@@ -8,6 +8,6 @@ class Backer
   end
 
   def back_project(project)
-    @backed_projects << project unless !project.is_a Project
+    @backed_projects << project unless !project.is_a? Project
   end
 end
